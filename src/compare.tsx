@@ -3,7 +3,6 @@ import Header from "./components/Header";
 import DriverComparison from "./components/driver-comparison";
 import Leaderboard from "./components/leaderboard";
 import TrackMap from "./components/track-map";
-import TelemetryGraphs from "./components/telemetry-graphs";
 import LoadingState from "./components/loading-state";
 import { useSearchParams } from "react-router-dom";
 import { useParams } from "react-router-dom";
@@ -18,7 +17,7 @@ export function Compare() {
   }>();
   const [searchParams] = useSearchParams();
   const d1 = searchParams.get("d1") || "VER";
-  const d2 = searchParams.get("d2") || "LEC";
+  // const d2 = searchParams.get("d2") || "LEC";
 
   const year = params.year as string;
   const circuit = params.circuit as string;
